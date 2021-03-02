@@ -12,9 +12,9 @@ const Profile = ( { name, tag, location, avatar, stats } ) => {
                     className={styles.avatar}
                     width="300"
                 />
-                <p> className={styles.name}{name}</p>
-                <p> className={styles.tag}{tag}</p>
-                <p> className={styles.location}{location}</p>
+                <p className={styles.name}>{name}</p>
+                <p className={styles.tag}>{tag}</p>
+                <p className={styles.location}>{location}</p>
             </div>
 
             <ul className={styles.stats}>
