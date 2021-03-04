@@ -3,7 +3,6 @@ import styles from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
-    console.log(stats, title);
     return <>
         <section className={styles.statistics}>
             {title && <h2 className={styles.title}>Upload stats</h2>}
