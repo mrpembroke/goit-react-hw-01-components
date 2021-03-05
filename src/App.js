@@ -7,6 +7,7 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 import user from './db/user.json';
 import statsData from './db/statistical-data.json';
 import friendsList from './db/friends.json';
+import transactions from './db/transactions.json';
 
 const { name, tag, location, avatar, stats } = user;
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <h1>hw-01</h1>
+      
       <Profile
         name={name}
         tag={tag}
@@ -25,7 +27,7 @@ function App() {
       
       <FriendList friends={friendsList}/>
       
-      <TransactionHistory />
+      <TransactionHistory items={transactions}/>
     </div>
   );
 }
