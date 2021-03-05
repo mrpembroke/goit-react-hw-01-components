@@ -31,10 +31,10 @@ Statistics.defaultProps = {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    statts: PropTypes.arrayOf(PropTypes.shape({
+    stats: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
-        percantage: PropTypes.number.isRequired,
+        percentage: PropTypes.number.isRequired,
     }),),
 }
 
