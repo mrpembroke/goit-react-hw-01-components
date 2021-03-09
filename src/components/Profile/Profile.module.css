@@ -1,0 +1,83 @@
+.profile {
+  width: 300px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.avatar {
+  display: block;
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: rgba(126, 126, 126, 0.39);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+.tag {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  color: rgb(125 140 156);
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.location {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  color: rgb(125 140 156);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid rgb(125 140 156);
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statsItem:not(:last-child) {
+  margin-right: 35px;
+}
+
+.label {
+  color: rgb(125 140 156);
+}
+

@@ -12,7 +12,7 @@ const Statistics = ({ title, stats }) => {
                     const {id, label, percentage} = el;
 
                     return (
-                        <li className={styles.item} key={id}>
+                        <li className={styles.item} key={id} style={{backgroundColor: `rgba( ${random()} , ${random()} , ${random()} )`}}>
                             <span className={styles.label}>{label} </span>
                             <span className={styles.percentage}>{percentage}%</span>
                         </li>
@@ -21,6 +21,10 @@ const Statistics = ({ title, stats }) => {
             </ul>
         </section>
     </>
+}
+
+function random() {
+  return Math.floor(Math.random() * 256);
 }
 
 export default Statistics;

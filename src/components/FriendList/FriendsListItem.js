@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FriendsListItem = ( {name, avatar }) => {
+import styles from './FriendsList.module.css';
+
+const FriendsListItem = ( {name, avatar, isOnline }) => {
     return (
-        <li>
+        <li className={styles.item}>
+            {<span className={ isOnline ? styles.statusOn : styles.statusOff }></span>}
             {<img src={avatar} alt={name} width='50' />}
-            {name}
+            <p className={styles.name}>{name}</p>
         </li>
     )
 }
